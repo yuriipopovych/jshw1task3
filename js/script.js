@@ -1,3 +1,4 @@
+//////task 3 ///////
 const users = {
   1: {
     name: 'Roman',
@@ -30,11 +31,8 @@ const users = {
   },
   5: {
     name: 'Kurz',
-    lastName: 'Smith',
-    otherData: {
-      role: 'student'
-    }
-  }
+    lastName: 'Smith'
+  },
 };
 
 Object.keys(users).forEach(function(key) {
@@ -43,7 +41,8 @@ Object.keys(users).forEach(function(key) {
   if(user) {
      console.log('name: ', user.name);
      console.log('last name: ', user.lastName);
-     
-     console.log('role: ', user.otherData.role)
+   if (user.otherData){  
+     console.log('role: ', user.otherData.role);
+    }
   }
 })
